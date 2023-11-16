@@ -1,7 +1,17 @@
-.nav-item{
-    
-    border-right: solid 1px;
+.navbar .navbar-nav .nav-link{
+    font-weight: bolder;
 }
-.nav-item:last-child{
-    border: none;
+
+@media screen and (min-width:992px){
+    .navbar .navbar-nav .nav-link{
+        padding: 0.1em;
+    }
+    
+    .nav-item:not(:last-child){
+        border-right: solid 3px;
+    }
+}
+
+.search{
+    background-color: rgb(140, 0, 255);
 }
