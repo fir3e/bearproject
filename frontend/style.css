@@ -1,0 +1,7 @@
+.nav-item{
+    
+    border-right: solid 1px;
+}
+.nav-item:last-child{
+    border: none;
+}

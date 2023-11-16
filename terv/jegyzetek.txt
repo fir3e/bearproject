@@ -1,0 +1,40 @@
+
+1. bootstrap
+2. navbar, footer
+3. registration form, recept form
+4. lista, content nézet
+
+template.html
+--- header
+--- content
+--- footer
+
+header.html
+--- header (css javascript stb)
+--- navbar
+
+content.html
+--- veblap contentje ( formok, listák)
+
+footer.html
+--- lezárás
+
+kedvencek
+Lepj meg!
+Bevásárlólista
+Fiókom
+Fórum
+
+Index
+
+Detail nézet
+- Tagek
+- Feltöltő neve
+- Kategória
+- Elkészítési idő
+- nehézségi szint
+- Adag
+- Hozzávalók (lista)
+- Elkészítési leírás
+
+Kereső: List nézet
