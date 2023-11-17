@@ -38,3 +38,13 @@ Detail nézet
 - Elkészítési leírás
 
 Kereső: List nézet
+
+Card:
+
+kép
+recept név
+leírás
+nehézségi szint
+idő
+bővebben
+felhasználónév
