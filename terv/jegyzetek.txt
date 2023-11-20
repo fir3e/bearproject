@@ -48,3 +48,12 @@ nehézségi szint
 idő
 bővebben
 felhasználónév
+
+
+Card v2:
+
+Kép
+vastag Kategória
+cím
+bal sarok time icon és idő
+jobb sarok értékelések (likeok)
