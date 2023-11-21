@@ -92,7 +92,7 @@
                         <label for="exampleFormControlTextarea1" class="form-label">Elkészítés</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <div class="input-group mb-3 ingredient">
+                    <div class="input-group mb-3 ingredient original">
                         <input type="text" aria-label="First name" placeholder="Hozzávaló név" class="form-control w-50">
                         <input type="text" aria-label="First name" placeholder="Mennyiség" class="form-control">
                         <select class="form-select" id="inputGroupSelect01">
@@ -105,9 +105,8 @@
                             <option value="6">dkg</option>
                             <option value="7">g</option>
                         </select>
-                        <button class="btn btn btn-danger">Törlés</button>
                     </div>
-                    <div class="input-group mb-3 ingredient">
+                    <div class="input-group mb-3 ingredient original">
                         <input type="text" aria-label="First name" placeholder="Hozzávaló név" class="form-control w-50">
                         <input type="text" aria-label="First name" placeholder="Mennyiség" class="form-control">
                         <select class="form-select" id="inputGroupSelect01">
@@ -120,9 +119,8 @@
                             <option value="6">dkg</option>
                             <option value="7">g</option>
                         </select>
-                        <button class="btn btn btn-danger" onclick="myFunction()">Törlés</button>
                     </div>
-                    <div class="input-group mb-3 ingredient d-none" id="ingredient-placeholder">
+                    <div class="input-group mb-3 ingredient d-none original" id="ingredient-placeholder">
                         <input type="text" aria-label="First name" placeholder="Hozzávaló név" class="form-control w-50">
                         <input type="text" aria-label="First name" placeholder="Mennyiség" class="form-control">
                         <select class="form-select" id="inputGroupSelect01">
@@ -135,10 +133,12 @@
                             <option value="6">dkg</option>
                             <option value="7">g</option>
                         </select>
-                        <button class="btn btn btn-danger">Törlés</button>
                     </div>
                     <div class="d-grid col-6 mx-auto ingredient-button" id="place-above">
                         <button class="btn btn-secondary" onclick="myFunction()" type="button">További hozzávalók...</button>
+                    </div>
+                    <div class="d-grid col-6 mx-auto ingredient-button">
+                        <button class="btn btn-secondary" onclick="myFunction2()" type="button">Törlés</button>
                     </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label">Kép feltöltése</label>
@@ -176,12 +176,20 @@
             newDiv.className = targetClass; // Assign the new div the same class as the target div
             newDiv.innerHTML = source.innerHTML; // Copy the source div's content to the new div
             newDiv.classList.remove("d-none");
+            newDiv.classList.remove("original");
             targetParent.insertBefore(newDiv, target); // Insert the new div before the target div;
         }
 
-        function myOtherFunction() {
-            
+        function myFunction2() {
+            // Get the div with the id 'place' and the class 'new'
+            var div = document.getElementById('place-above');
+            var prev = div.previousElementSibling;
+            if (!prev.classList.contains('original')) {
+                div.parentNode.removeChild(prev);
+            }
         }
+
+
     </script>
 </body>
 </html>
