@@ -57,3 +57,9 @@ vastag Kategória
 cím
 bal sarok time icon és idő
 jobb sarok értékelések (likeok)
+
+
+
++ oldalak:
+- Recept leírás
+- Fiók
