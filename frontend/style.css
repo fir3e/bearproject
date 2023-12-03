@@ -1,94 +1,215 @@
-.navbar .navbar-nav .nav-link{
-    font-weight: bolder;
+/* CSS HEX 
+--smoky-black: #191308ff; barna
+--sunglow: #ffcb47ff; sárga
+--taupe-gray: #979595ff; szürke
+--emerald: #0cce6bff; zöld
+--bittersweet: #f65f5fff; piros
+*/
+.test-col {
+  border: dotted rgba(255, 255, 255, 0.158) 1px;
 }
 
-@media screen and (min-width:992px){
-    .navbar .navbar-nav .nav-link{
-        padding: 0.1em;
-    }
-    
-    .nav-item:not(:last-child){
-        border-right: solid 3px;
-    }
+:root {
+  --color-darkbg: rgb(38 33 25);
+  --color-headings: #ffcb47ff;
+  --color-secondary-text: #979595ff;
+  --color-accent: #f65f5fff;
+  --color-extra: #0cce6bff;
+  --color-card: rgb(121 90 88);
 }
 
-.search{
-    background-image: url("images/Fiokom.jpg");
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
+.navbar .navbar-nav .nav-link {
+  font-weight: bolder;
 }
 
-.button-62{
-    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-    border: 0;
-    border-radius: 12px;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2.5;
-    outline: transparent;
-    padding: 0 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow .2s ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-  }
-  
-  .button-62:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-  }
-  
-  .button-62:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+@media screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 0.1em;
   }
 
+  .nav-item:not(:last-child) {
+    border-right: solid 3px;
+  }
+}
 
-  /* Login*/
+body a {
+  color: var(--color-secondary-text);
+}
 
-  .login{
-    background-image: url("images/Lepj\ meg.jpg");
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+body {
+  background-color: var(--color-darkbg) !important;
+}
 
-  .btn btn-primary{
-    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-    border: 0;
-    border-radius: 12px;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2.5;
-    outline: transparent;
-    padding: 0 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow .2s ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-  }
-  
-  .btn btn-primary:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-  }
-  
-  .btn btn-primary:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-  }
+/* Recept oldal */
+
+.card .list-group-item {
+  background-color: var(--color-card);
+}
+
+.hozzavalo-list {
+  list-style: none;
+}
+
+.recept-hozzavalok span {
+  width: 4.5rem;
+  text-align: center;
+}
+
+.hozzavalo-list li {
+  border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+}
+
+.hozzavalo-list li:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.red-bg {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.hozzavalo-list input:checked {
+  /*background-color: var(--color-extra);*/
+}
+
+.recept-leiras {
+  background-color: var(--color-card);
+  border-radius: 10px;
+}
+
+.card {
+  background-color: var(--color-card) !important;
+}
+
+.search {
+  background-image: url("images/Fiokom.jpg");
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+}
+
+.button-62 {
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/* Login*/
+
+.login {
+  background-image: url("images/Lepj\ meg.jpg");
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn btn-primary {
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.btn btn-primary:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.btn btn-primary:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.utmutato {
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary),
+    rgba(255, 255, 255, 0) 10%
+  );
+}
+
+/* Typography */
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif !important;
+  /* color: var(--color-body) !important; */
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+}
+
+/* Links */
+a {
+  text-decoration: none !important;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
