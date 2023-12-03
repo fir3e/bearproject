@@ -14,7 +14,7 @@
   --color-headings: #ffcb47ff;
   --color-secondary-text: #979595ff;
   --color-accent: #f65f5fff;
-  --color-extra: #0cce6bff;
+  --color-extra: rgb(49, 38, 37);
   --color-card: rgb(121 90 88);
 }
 
@@ -73,6 +73,15 @@ body {
 }
 
 .recept-leiras {
+  background: linear-gradient(
+    to top,
+    var(--color-card),
+    var(--color-extra) 100%
+  );
+  border-radius: 10px;
+}
+
+.comment-item {
   background-color: var(--color-card);
   border-radius: 10px;
 }
