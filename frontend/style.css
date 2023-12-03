@@ -242,3 +242,14 @@ a {
 .link-arrow:hover::after {
   margin-left: 10px;
 }
+
+.link-arrow-back a::before {
+  content: "<-";
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.5s;
+}
+
+.link-arrow-back a:hover::before {
+  transform: translateX(-10px);
+}
