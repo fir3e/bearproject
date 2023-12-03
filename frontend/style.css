@@ -81,9 +81,17 @@ body {
   border-radius: 10px;
 }
 
+.comment-item,
+.comment-form {
+  border-radius: 10px;
+}
+
 .comment-item {
   background-color: var(--color-card);
-  border-radius: 10px;
+}
+
+.comment-form {
+  background-color: rgb(61, 61, 61);
 }
 
 .card {
