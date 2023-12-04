@@ -83,7 +83,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.red-bg {
+.blue-bg {
   background: rgb(33, 37, 41);
   background: linear-gradient(
     90deg,
@@ -92,6 +92,11 @@ body {
     var(--color-blue) 70%,
     rgba(33, 37, 41, 1) 100%
   );
+  color: #fff;
+}
+
+.red-bg {
+  background-color: var(--color-accent);
   color: #fff;
 }
 
