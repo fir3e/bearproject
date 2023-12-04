@@ -35,7 +35,7 @@
         class="navbar navbar-expand-lg bg-black sticky-top text-uppercase p-3"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="index.html">
             <strong>FF</strong>
           </a>
           <button
@@ -61,6 +61,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Lepj meg!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Receptek</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Bevásárlólista</a>
@@ -236,29 +239,30 @@
               </select>
             </div>
             <div
-              class="row ingredient-button justify-content-center"
+              class="row ingredient-button mb-2 gx-2 justify-content-center"
               id="place-above"
             >
-              <div class="col-4">
+              <div class="col-sm-8 col-md-8 col-lg-4">
                 <button
-                  class="btn btn-secondary"
-                  onclick="myFunction()"
+                  class="btn btn-secondary w-100"
+                  onclick="AddFunction()"
                   type="button"
                 >
                   További hozzávalók...
                 </button>
               </div>
-              <div class="col-2">
+              <div class="col-sm-4 col-md-4 col-lg-2">
                 <button
-                  class="btn btn-danger"
-                  onclick="myFunction2()"
+                  id="remove-bttn"
+                  class="btn btn-danger w-100"
+                  onclick="RemoveFunction()"
                   type="button"
+                  disabled
                 >
                   Törlés
                 </button>
               </div>
             </div>
-            <div class="d-grid col-6 mx-auto ingredient-button"></div>
             <div class="mb-3">
               <label for="formFile" class="form-label">Kép feltöltése</label>
               <input class="form-control" type="file" id="formFile" />
@@ -302,7 +306,10 @@
     </div>
     <!-- Footer End -->
     <script>
-      function myFunction() {
+      var sum = 0;
+      var removebttn = document.getElementById("remove-bttn");
+
+      function AddFunction() {
         var source = document.getElementById("ingredient-placeholder"); // Get the source div
         var target = document.getElementById("place-above"); // Get the target div
         var targetClass = source.className; // Get the target div's class
@@ -313,14 +320,22 @@
         newDiv.classList.remove("d-none");
         newDiv.classList.remove("original");
         targetParent.insertBefore(newDiv, target); // Insert the new div before the target div;
+        sum = sum + 1;
+        if (sum > 0) {
+          removebttn.removeAttribute("disabled");
+        }
       }
 
-      function myFunction2() {
+      function RemoveFunction() {
         // Get the div with the id 'place' and the class 'new'
         var div = document.getElementById("place-above");
         var prev = div.previousElementSibling;
         if (!prev.classList.contains("original")) {
           div.parentNode.removeChild(prev);
+        }
+        sum = sum - 1;
+        if (sum == 0) {
+          removebttn.setAttribute("disabled", true);
         }
       }
     </script>
