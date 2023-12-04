@@ -54,6 +54,17 @@ body {
   list-style: none;
 }
 
+.alert {
+  font-weight: bold;
+}
+
+.alert li {
+  list-style: decimal;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
 .recept-hozzavalok span {
   width: 4.5rem;
   text-align: center;

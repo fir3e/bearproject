@@ -96,9 +96,19 @@
     <!-- Content Start -->
     <section class="recept-feltolt">
       <div class="container">
-        <div class="row my-5">
-          <div class="col-md-2 border utmutato">Útmutató:</div>
-          <div class="col-md-10">
+        <div class="row my-4">
+          <div class="col-md-12 utmutato">
+            <div class="alert alert-warning" role="alert">
+              Figyelem! Kövesse ezt a leírást!
+              <ul class="mt-2 list-group">
+                <li>A recept hozzávalókat pontosan mérje le.</li>
+                <li>
+                  A feltöltött kép ne haladja meg a 1200 * 700 px méretet.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
             <div class="mb-3 text-center">
               <label for="formGroupExampleInput" class="form-label"
                 >Recept neve</label
@@ -109,6 +119,16 @@
                 id="formGroupExampleInput"
                 placeholder=""
               />
+            </div>
+            <div class="mb-3 text-center">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Elkészítés</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
             </div>
             <div class="row mb-3">
               <div class="col-3">
@@ -148,17 +168,6 @@
                 />
                 <label class="btn" for="option8">Mester</label>
               </div>
-            </div>
-
-            <div class="mb-3 text-center">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Elkészítés</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
             </div>
             <div class="input-group mb-3 ingredient original">
               <input
