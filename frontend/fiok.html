@@ -32,7 +32,7 @@
       <div class="container-fluid blue-bg">
         <div class="row">
           <div class="col-lg-12">
-            <h5 class="text-center my-2">Fiókom</h5>
+            <h2 class="text-center my-2 fiok-text">Fiókom</h2>
           </div>
         </div>
       </div>
@@ -42,12 +42,14 @@
             <h2 class="text-center">Grizzli</h2>
             <div class="hstack gap-3">
               <div class="p-2">Receptek száma: 3</div>
-              <div class="p-2 ms-auto">Kommentek: 10</div>
-              <div class="p-2">Like-ok: 20</div>
+              <div class="p-2 ms-auto">
+                <i class="bi bi-chat-right-text"></i> 10
+              </div>
+              <div class="p-2"><i class="bi bi-hand-thumbs-up"></i> 20</div>
             </div>
             <hr />
+            <h3 class="text-center">Jelszó változtatás</h3>
             <div class="vstack gap-0">
-              <h3 class="text-center">Jelszó változtatás</h3>
               <label for="inputPassword5" class="form-label mt-2"
                 >Régi jelszó</label
               >
@@ -80,7 +82,76 @@
                 kell betűket és számokat, valamint nem tartalmazhat speciális
                 karaktereket.
               </div>
+              <button type="button" class="btn btn-primary mt-3 mb-3">
+                Mentés
+              </button>
             </div>
+            <hr />
+            <h3 class="text-center">Receptek</h3>
+            <!-- lista elem -->
+            <div class="hstack gap-0 receptlista-item">
+              <div class="p-2 recepot-title">Kacsa máj</div>
+              <div class="p-2 list-date">2023.12.05</div>
+              <div class="p-2 ms-auto">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  Módosítás
+                </button>
+              </div>
+              <div class="p-2">
+                <button type="button" class="btn btn-danger btn-sm">
+                  Törlés
+                </button>
+              </div>
+            </div>
+            <!-- lista elem end -->
+            <!-- lista elem -->
+            <div class="hstack gap-0 receptlista-item">
+              <div class="p-2 recepot-title">Liba májas kacsa</div>
+              <div class="p-2 list-date">2023.12.05</div>
+              <div class="p-2 ms-auto">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  Módosítás
+                </button>
+              </div>
+              <div class="p-2">
+                <button type="button" class="btn btn-danger btn-sm">
+                  Törlés
+                </button>
+              </div>
+            </div>
+            <!-- lista elem end -->
+            <!-- lista elem -->
+            <div class="hstack gap-0 receptlista-item">
+              <div class="p-2 recepot-title">Rántott lazac krumpli</div>
+              <div class="p-2 list-date">2023.12.05</div>
+              <div class="p-2 ms-auto">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  Módosítás
+                </button>
+              </div>
+              <div class="p-2">
+                <button type="button" class="btn btn-danger btn-sm">
+                  Törlés
+                </button>
+              </div>
+            </div>
+            <!-- lista elem end -->
+            <!-- lista elem -->
+            <div class="hstack gap-0 receptlista-item">
+              <div class="p-2 recepot-title">Sajtos tésztás spagetti</div>
+              <div class="p-2 list-date">2023.12.05</div>
+              <div class="p-2 ms-auto">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  Módosítás
+                </button>
+              </div>
+              <div class="p-2">
+                <button type="button" class="btn btn-danger btn-sm">
+                  Törlés
+                </button>
+              </div>
+            </div>
+            <!-- lista elem end -->
           </div>
         </div>
       </div>
