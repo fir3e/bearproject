@@ -63,3 +63,17 @@ jobb sarok értékelések (likeok)
 + oldalak:
 - Recept leírás
 - Fiók
+
+
+javítások:
+g-3 mt mb helyett.
+col-sm-10 offset-sm-2
+
+Be sure to use .col-form-label-sm or .col-form-label-lg to your <label>s or <legend>s to correctly follow the size of .form-control-lg and .form-control-sm.
+
+https://getbootstrap.com/docs/5.3/content/reboot/#forms
+https://getbootstrap.com/docs/5.3/customize/components/#creating-your-own
+
+<div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+  Example element with utilities
+</div>

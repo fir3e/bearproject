@@ -35,15 +35,19 @@
     <!-- Content Start -->
     <section class="search">
       <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="text-center col-10">
+        <div class="row">
+          <div class="text-center col-8 mx-auto">
             <h1 class="display-5 mb-4">KERESS RECEPTRE VAGY HOZZÁVALÓRA</h1>
-            <input
-              class="form-control form-control-lg"
-              type="text"
-              placeholder="Keresés..."
-              aria-label=".form-control-lg example"
-            />
+            <div class="input-group mb-3">
+              <input type="search" class="form-control" placeholder="Keresés" />
+              <button
+                class="btn btn-primary btn-lg"
+                type="button"
+                id="bttn-kereses"
+              >
+                Keresés
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -134,53 +138,45 @@
     </section>
     <section class="registration">
       <div class="container">
-        <h2 class="text-center mb-4">Regisztráció</h2>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Felhasználónév</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Írd be a felhasználóneved, pl. Séf1"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput2" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput2"
-            placeholder="Írd be az emailed, pl. sef1@gmail.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput3" class="form-label"
-            >Jelszó</label
-          >
-          <input
-            type="password"
-            class="form-control"
-            id="exampleFormControlInput3"
-            placeholder="Írd be a jelszavad, pl. Sef1jelszo"
-          />
-        </div>
-        <div class="mb-4">
-          <label for="exampleFormControlInput4" class="form-label"
-            >Jelszó ismét</label
-          >
-          <input
-            type="password"
-            class="form-control"
-            id="exampleFormControlInput4"
-            placeholder="Írd be a fent megadott jelszavadat"
-          />
-        </div>
-        <div class="text-center">
-          <button type="submit" class="button-62 px-5">Regisztráció</button>
+        <div class="row">
+          <div class="col-8 mx-auto">
+            <h2 class="text-center mb-4">Regisztráció</h2>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="username"
+                placeholder="Felhasználónév"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput2"
+                placeholder="Email cím"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Jelszó"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="password2"
+                placeholder="Jelszó megerősítése"
+              />
+            </div>
+            <div class="text-center">
+              <button type="submit" class="button-62 px-5">Regisztráció</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
