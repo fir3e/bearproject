@@ -57,94 +57,278 @@
     <section class="search-category">
       <div class="container">
         <div class="row my-3">
+          <!-- Kategoria valaszto start -->
           <div class="col-12">
-            <div class="hstack gap-3">
-              <div class="p-2"><strong>Kategória:</strong></div>
-              <div class="p-2">
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="inlineCheckbox1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox1">
-                    Főétel
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="inlineCheckbox2"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox2">
-                    Előétel
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="inlineCheckbox3"
-                    value="option3"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox3">
-                    Desszert
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="inlineCheckbox4"
-                    value="option4"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox4">
-                    Leves
-                  </label>
+            <div class="row g-3 mb-3">
+              <div class="col-auto">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Kategória
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="eloetel"
+                          />
+                          <label class="form-check-label" for="eloetel">
+                            Előétel
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="foetel"
+                          />
+                          <label class="form-check-label" for="foetel">
+                            Főétel
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="leves"
+                          />
+                          <label class="form-check-label" for="leves">
+                            Leves
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="desszert"
+                          />
+                          <label class="form-check-label" for="desszert">
+                            Desszert
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="mind-kat"
+                          />
+                          <label class="form-check-label" for="mind-kat"
+                            >Mind</label
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="vr"></div>
-              <div class="p-2"><strong>Nehézség:</strong></div>
-              <div class="p-2">
-                <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="inlineCheckbox5"
-                      value="option5"
-                    />
-                    <label class="form-check-label" for="inlineCheckbox5">
-                      Könnyű
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="inlineCheckbox6"
-                      value="option6"
-                    />
-                    <label class="form-check-label" for="inlineCheckbox6">
-                      Nehéz
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="inlineCheckbox7"
-                      value="option7"
-                    />
-                    <label class="form-check-label" for="inlineCheckbox7">
-                      Mester
-                    </label>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Idő
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="kevesebb30"
+                          />
+                          <label class="form-check-label" for="kevesebb30">
+                            < 30 perc
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="30-60"
+                          />
+                          <label class="form-check-label" for="30-60">
+                            30-60 perc
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="60-90"
+                          />
+                          <label class="form-check-label" for="60-90">
+                            60-90 perc
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="nagyobb90"
+                          />
+                          <label class="form-check-label" for="nagyobb90">
+                            > 90 perc
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="mind-ido"
+                          />
+                          <label class="form-check-label" for="mind-ido"
+                            >Mind</label
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Nehézség
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="konnyu"
+                          />
+                          <label class="form-check-label" for="konnyu">
+                            Könnyű
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="nehez"
+                          />
+                          <label class="form-check-label" for="nehez">
+                            Nehéz
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="mester"
+                          />
+                          <label class="form-check-label" for="mester">
+                            Mester
+                          </label>
+                        </div>
+                      </a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="mind-nehezseg"
+                          />
+                          <label class="form-check-label" for="mind-nehezseg"
+                            >Mind</label
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Hozzávalók (többet is megadhat vesszővel elválasztva)"
+                />
+              </div>
+              <div class="col-auto ms-auto">
+                <button class="btn btn-primary" type="submit">Szűrés</button>
               </div>
             </div>
           </div>
-          <hr>
+          <!-- Kategoria valaszto end -->
+          <hr />
           <div class="col-12">
             <div class="hstack gap-3 fs-3">
               <div class="p-2"><strong>Keresés:</strong></div>
